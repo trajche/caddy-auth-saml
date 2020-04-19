@@ -15,7 +15,7 @@ all:
 	@echo "Build on $(BUILD_DATE) by $(BUILD_USER)"
 	@rm -rf ./bin/caddy
 	@mkdir -p ../xcaddy-$(PLUGIN_NAME) ./bin/
-	@cd ../xcaddy-$(PLUGIN_NAME)/ && xcaddy build master --output .caddy --with github.com/greenpau/caddy-auth-saml@v1.0.0
+	@cd ../xcaddy-$(PLUGIN_NAME)/ && xcaddy build master --output .caddy --with github.com/trajche/caddy-auth-saml@v1.0.0
 	@mv ../xcaddy-$(PLUGIN_NAME)/caddy ./bin/
 	@#bin/caddy run -environ -config assets/conf/Caddyfile.json
 
