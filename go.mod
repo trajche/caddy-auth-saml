@@ -1,4 +1,4 @@
-module github.com/greenpau/caddy-auth-saml
+module github.com/trajche/caddy-auth-saml
 
 go 1.14
 
