@@ -120,7 +120,7 @@ func (az *AzureIdp) Authenticate(r *http.Request) (*caddyauth.User, string, erro
 			}
 		}
 
-		if claims.Email == "" || claims.Name == "" || len(claims.Roles) == 0 {
+		if claims.Email == "" || claims.Name == "" {
 			return nil, "", fmt.Errorf("The Azure AD authorization failed, mandatory attributes not found: %v", claims)
 		}
 
